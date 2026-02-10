@@ -1,4 +1,5 @@
 # FIST-DTIA: Pharmacophore-Aware 3D Voxelization for Drug-Target Interaction and Affinity Dual-Prediction
+![structural model](https://github.com/user-attachments/assets/52698a94-7ba6-47d3-9e01-3b8620f561da)
 
 ## 🧪 Scientific Framework
 FIST-DTIA (Pharmacophore-aware 3D Voxelization for Drug-target Interaction and Affinity) introduces a unified multimodal framework designed to address the representational limitations of sequence-only models. Unlike traditional approaches, FIST-DTIA explicitly models the three-dimensional "lock-and-key" mechanism by synergizing 3D voxelized pharmacophores with a global structural protein encoder.
