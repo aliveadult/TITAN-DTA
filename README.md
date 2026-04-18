@@ -1,8 +1,8 @@
-# FIST-DTIA: Pharmacophore-Aware 3D Voxelization for Drug-Target Interaction and Affinity Dual-Prediction
+# TITAN-DTA: Pharmacophore-Aware 3D Voxelization for Drug-Target Interaction and Affinity Dual-Prediction
 ![structural model](https://github.com/user-attachments/assets/52698a94-7ba6-47d3-9e01-3b8620f561da)
 
 ## 🧪 Scientific Framework
-FIST-DTIA (Pharmacophore-aware 3D Voxelization for Drug-target Interaction and Affinity) introduces a unified multimodal framework designed to address the representational limitations of sequence-only models. Unlike traditional approaches, FIST-DTIA explicitly models the three-dimensional "lock-and-key" mechanism by synergizing 3D voxelized pharmacophores with a global structural protein encoder.
+TITAN-DTA (Pharmacophore-aware 3D Voxelization for Drug-target Interaction and Affinity) introduces a unified multimodal framework designed to address the representational limitations of sequence-only models. Unlike traditional approaches, TITAN-DTA explicitly models the three-dimensional "lock-and-key" mechanism by synergizing 3D voxelized pharmacophores with a global structural protein encoder.
 
 ### Key Innovations in Architecture:
 * **3D Drug Pharmacophore Encoder**: Beyond 2D graphs, the model voxelizes drugs into a **7-channel 3D grid** (H-Donor, Acceptor, Aromatic, Positive, Negative, Hydrophobic, and Halogen). A 3D CNN extracts spatial chemical signatures from these voxels.
@@ -17,7 +17,7 @@ You can access the processed dataset files (including CSV labels, PDB structures
 
 
 ## 📊 Benchmark Datasets and Resources
-FIST-DTIA was rigorously validated on twelve public benchmarks, spanning varied species, target families (e.g., kinases, nuclear receptors, ion channels), and experimental measurement types.
+TITAN-DTA was rigorously validated on twelve public benchmarks, spanning varied species, target families (e.g., kinases, nuclear receptors, ion channels), and experimental measurement types.
 ### Drug-Target Affinity (DTA) Regression
 These datasets evaluate the model's capacity to quantify binding strength via metrics such as Concordance Index (CI) and Mean Squared Error (MSE).
 - **Davis**: A kinase-focused dataset providing $pK_d$ values for 442 drugs and 68 targets. It serves as a gold standard for testing regression fidelity. Available via [Therapeutics Data Commons](https://tdcommons.ai/multi_pred_tasks/dta/).
@@ -44,11 +44,11 @@ The project is modularized for clarity and high-performance computing:
 ---
 
 ## 🛠️ Usage Guide
-FIST-DTIA is designed for Python 3.9+ environments with CUDA support.
+TITAN-DTA is designed for Python 3.9+ environments with CUDA support.
 ```bash
 # Clone the repository
-git clone [https://github.com/aliveadult/FIST-DTIA.git](https://github.com/aliveadult/FIST-DTIA.git)
-cd FIST-DTIA
+git clone [https://github.com/aliveadult/TITAN-DTA.git](https://github.com/aliveadult/TITAN-DTA.git)
+cd TITAN-DTA
 
 # Install dependencies
 pip install torch torch-geometric rdkit-pypi biopython scikit-learn pandas tqdm
